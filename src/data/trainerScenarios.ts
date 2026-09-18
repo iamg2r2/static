@@ -1,0 +1,81 @@
+import { TrainerScenario } from '../types'
+
+export const trainerScenarios: TrainerScenario[] = [
+  {
+    id: 'lecture-notes-only',
+    situation: 'The faculty member says: "My students only want lecture notes."',
+    exploreFirst: 'Ask what happens on the rare occasion a student does engage beyond notes — what triggered it?',
+    questions: ['What happens when students are given a problem without the answer?', 'Could a five-minute activity be added to the lecture?', 'Could students work in pairs before the explanation?'],
+    smallInterventions: ['Try one Think-Pair-Share moment mid-lecture', 'Try Peer Instruction on one conceptual question'],
+  },
+  {
+    id: 'very-little-time',
+    situation: 'The faculty member has very little class time.',
+    exploreFirst: 'Ask which part of class time already feels least valuable to them.',
+    questions: ['What is the one thing students must leave today\u2019s class able to do?', 'Could some content move to a short pre-class resource?'],
+    smallInterventions: ['Peer Instruction (15 minutes)', 'Exit Ticket to redirect the next session efficiently'],
+  },
+  {
+    id: 'large-class',
+    situation: 'The class is very large.',
+    exploreFirst: 'Ask what currently happens when they try to get individual responses in this class.',
+    questions: ['Could every student respond at once, even informally (show of hands, cards)?', 'Could students discuss briefly with whoever sits nearby?'],
+    smallInterventions: ['Peer Instruction', 'Think-Pair-Share', 'Exit Ticket for a fast read of the room'],
+  },
+  {
+    id: 'students-passive',
+    situation: 'Students seem passive in class.',
+    exploreFirst: 'Ask whether passivity shows up everywhere, or in specific moments (e.g. only during Q&A).',
+    questions: ['What would make it safer for a wrong answer to be shared out loud?', 'Could students first commit to an answer privately before it becomes public?'],
+    smallInterventions: ['Peer Instruction', 'Think-Pair-Share', 'Anonymous poll before open discussion'],
+  },
+  {
+    id: 'heavy-lecture-reliance',
+    situation: 'The faculty member relies heavily on lectures.',
+    exploreFirst: 'Ask what they most want to preserve about lecturing, and what they wish worked better.',
+    questions: ['Which part of the lecture do students most need explained live, versus could read beforehand?', 'What would class time be used for if delivery moved outside class?'],
+    smallInterventions: ['A single Flipped Classroom session as a pilot', 'One Discussion-Based segment inserted into a lecture'],
+  },
+  {
+    id: 'assessment-mostly-recall',
+    situation: 'Assessment is mostly recall.',
+    exploreFirst: 'Ask what they actually want students to be able to do with the knowledge, beyond recalling it.',
+    questions: ['If a student aced this assessment, could they still fail to apply the concept in practice?', 'What would a slightly harder, more applied version look like?'],
+    smallInterventions: ['Add one Case Analysis question to an existing assessment', 'Try the assessment redesign tool on one existing question'],
+  },
+  {
+    id: 'wants-hots',
+    situation: 'The faculty member wants to introduce HOTS.',
+    exploreFirst: 'Ask them to pick one existing LOTS question they already use, to work from rather than starting blank.',
+    questions: ['Could students analyse, evaluate or create something related to this topic?', 'What genuine, unresolved question exists in this topic?'],
+    smallInterventions: ['Run one existing question through the "Turn This Into HOTS" tool', 'Try one Case Analysis or Debate activity'],
+  },
+  {
+    id: 'wants-project-work',
+    situation: 'The faculty member wants to try project work.',
+    exploreFirst: 'Ask how much time they can realistically give it — this shapes scope more than ambition does.',
+    questions: ['What is the smallest real, complete thing students could build or produce?', 'Is there a real audience or use for the output?'],
+    smallInterventions: ['Start with a Mini Project rather than a full Project-Based Learning unit', 'Pilot with one team before scaling to the whole class'],
+  },
+  {
+    id: 'unsure-about-evidence',
+    situation: 'The faculty member is unsure what evidence to collect.',
+    exploreFirst: 'Ask what they would want to be able to show someone else about this class, if asked.',
+    questions: ['What evidence naturally comes from the activity, without extra work?', 'What would show a student\u2019s thinking changed, not just their score?'],
+    smallInterventions: ['Walk through the Before/During/After evidence stages together', 'Add one Reflection Circle after their next activity to generate evidence'],
+  },
+  {
+    id: 'already-innovative',
+    situation: 'The faculty member already uses innovative teaching.',
+    exploreFirst: 'Ask what they think is not yet working as well as they\u2019d like, rather than starting from scratch.',
+    questions: ['Where does the current approach fall short of what you want students to do?', 'Is there a natural next step — deeper assessment alignment, or better evidence capture?'],
+    smallInterventions: ['Explore the Pedagogy Comparison tool for a complementary approach', 'Focus the conversation on assessment or evidence rather than a new activity'],
+  },
+  {
+    id: 'wants-something-simple',
+    situation: 'The faculty member wants something simple rather than a major redesign.',
+    exploreFirst: 'Confirm what "simple" means to them — low prep, low risk, or low time in class.',
+    questions: ['Could you try this in your very next class with no extra preparation?', 'What is the smallest version of a change you would feel comfortable trying?'],
+    smallInterventions: ['Think-Pair-Share', 'Peer Instruction', 'Exit Ticket'],
+  },
+]

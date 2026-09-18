@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF9F6;
+  color: #24282C;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #EF8A3A;
+  color: white;
+}
+
+:focus-visible {
+  outline: 3px solid #087EA4;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Accordion content transitions */
+.accordion-content[hidden] {
+  display: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}
